@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="submitForm">
-    <div class="from-control" :class="{ invalid: !firstName.isValid }">
+    <div class="form-control" :class="{ invalid: !firstName.isValid }">
       <label for="firstname">Fisrt Name</label>
       <input
         type="text"
@@ -10,7 +10,7 @@
       />
       <p v-if="!firstName.isValid">First Name must not be empty</p>
     </div>
-    <div class="from-control" :class="{ invalid: !lastName.isValid }">
+    <div class="form-control" :class="{ invalid: !lastName.isValid }">
       <label for="lastname">Last Name</label>
       <input
         type="text"
@@ -20,7 +20,7 @@
       />
       <p v-if="!lastName.isValid">Last Name must not be empty</p>
     </div>
-    <div class="from-control" :class="{ invalid: !description.isValid }">
+    <div class="form-control" :class="{ invalid: !description.isValid }">
       <label for="description">Description</label>
       <textarea
         id="description"
@@ -30,7 +30,7 @@
       ></textarea>
       <p v-if="!description.isValid">Description must not be empty</p>
     </div>
-    <div class="from-control" :class="{ invalid: !rate.isValid }">
+    <div class="form-control" :class="{ invalid: !rate.isValid }">
       <label for="rate">Hourly Rate</label>
       <input
         type="number"
@@ -40,7 +40,7 @@
       />
       <p v-if="!rate.isValid">rate must not be 0 or below</p>
     </div>
-    <div class="from-control" :class="{ invalid: !areas.isValid }">
+    <div class="form-control" :class="{ invalid: !areas.isValid }">
       <h3>Areas of Expertise</h3>
       <div>
         <input
