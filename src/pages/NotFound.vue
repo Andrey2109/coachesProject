@@ -1,1 +1,11 @@
-<template><h1></h1></template>
+<template>
+  <section>
+    <base-card>
+      <h2>Page not found</h2>
+      <p>
+        This page not found - maybe check out all our
+        <router-link to="/coaches">coaches</router-link>
+      </p>
+    </base-card>
+  </section>
+</template>
