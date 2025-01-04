@@ -58,6 +58,14 @@ export default {
         this.formIsValid = false;
         return;
       }
+      if (this.mode === 'login') {
+        // Login functionality will be implemented later
+      } else {
+        this.$store.dispatch('signup', {
+          email: this.email,
+          password: this.password,
+        });
+      }
     },
     switchAuthMode() {
       if (this.mode === 'login') {
