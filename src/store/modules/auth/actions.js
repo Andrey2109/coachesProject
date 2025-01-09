@@ -7,7 +7,7 @@ export default {
         body: JSON.stringify({
           email: payload.email,
           password: payload.password,
-          returnSecureToke: true,
+          returnSecureToken: true,
         }),
       }
     );

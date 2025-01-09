@@ -25,8 +25,12 @@ export default {
   },
   async fetchRequests(context) {
     const coachId = context.rootGetters.userId;
+    const token = context.rootGetters.token;
+    if (!token) {
+      throw new Error('Not authenticated!');
+    }
     const response = await fetch(
-      `https://vue-https-demo-e4aa2-default-rtdb.firebaseio.com/requests/${coachId}.json`
+      `https://vue-https-demo-e4aa2-default-rtdb.firebaseio.com/requests/${coachId}.json?auth=${token}`
     );
     const responseData = await response.json();
 
