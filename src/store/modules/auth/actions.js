@@ -1,7 +1,9 @@
 export default {
   async login(context, payload) {
+    const API_KEY = process.env.VUE_APP_FIREBASE_API_KEY;
+
     const response = await fetch(
-      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyD1rVC-5A0CP8hVB2CUniKHxBxLQ4JIY-0',
+      `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${API_KEY}`,
       {
         method: 'POST',
         body: JSON.stringify({
@@ -29,8 +31,9 @@ export default {
     });
   },
   async signup(context, payload) {
+    const API_KEY = process.env.VUE_APP_FIREBASE_API_KEY;
     const response = await fetch(
-      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD1rVC-5A0CP8hVB2CUniKHxBxLQ4JIY-0',
+      `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${API_KEY}`,
       {
         method: 'POST',
         body: JSON.stringify({
