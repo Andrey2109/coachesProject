@@ -14,7 +14,6 @@ export default {
   props: ['email', 'message'],
   computed: {
     emailLink() {
-      console.log('emailLink was triggered');
       return `mailto:${this.email}`;
     },
   },
