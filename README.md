@@ -3,7 +3,7 @@
 ```markdown
 # Find A Coach Platform
 
-A Vue.js application that connects developers with professional coaches. Users can find coaches specializing in frontend, backend, and career development.
+A Vue.js application that connects developers with professional coaches. Users can find coaches by their expertise.
 
 ## Features
 
@@ -65,8 +65,6 @@ npm run build
 
 ## Project Structure
 
-- 
-
 src
 
  - Source code
@@ -78,7 +76,6 @@ src
 router.js
 
  - Route configurations
-  - 
 
 App.vue
 
@@ -102,4 +99,3 @@ App.vue
 - Send messages to coaches
 - View received requests (for coaches)
 - Email integration
-```
